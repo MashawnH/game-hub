@@ -6,7 +6,9 @@ add:
 	git add .
 
 commit:
-	git commit -m
+	git commit -m $(m)
 
 push:
+	add
+	commit
 	git push
