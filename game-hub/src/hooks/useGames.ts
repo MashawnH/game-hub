@@ -13,8 +13,9 @@ export interface Platform {
     name: string;
     background_image: string;
     parent_platforms: {
-      map(arg0: (p: any) => any): Platform[];platform: Platform[]
-};
+      map(arg0: (p: any) => any): Platform[];platform: Platform[]};
+      metacritic: number;
+
   }
   
   interface FetchGamesResponse {
