@@ -11,7 +11,9 @@ export interface Platform {
     id: number;
     name: string;
     background_image: string;
-    parent_platforms: {platform: Platform[]};
+    parent_platforms: {
+      [x: string]: any;platform: Platform[]
+};
     metacritic: number;
 
   }
